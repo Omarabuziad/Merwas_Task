@@ -1,0 +1,212 @@
+.header{
+    background-color: #01b2ee;
+    display: flex;
+    justify-content:space-between;
+    padding: 0.10em;
+    width: 100%;
+    padding: .25em;
+    align-items: center;
+   
+}
+
+.header-title{
+    color: rgb(255, 255, 255);
+    /* margin:0 0 0 7.5%; */
+    margin:0 0 0 3%; 
+    font-weight: 900;
+    /* font-size: 2.2rem; */
+    font-size: 1.9rem;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-stretch:ultra-expanded;
+}
+
+
+.header-btns{   
+    margin-right: 3%;
+    display: flex;
+}
+
+.location-btn{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    /* margin-right: 0.75em; */
+}
+
+
+.location-icons{
+    color: white;
+    font-size: 1.75rem;
+    cursor: pointer;
+    /* margin-right: 0.2em; */
+}
+
+
+.header-btns-extra{
+    display: none;
+    align-items: center;  
+}
+
+.header-icons{
+    color: white;
+    font-size: 1.75rem;
+    cursor: pointer;
+    margin-right: 1.25em;
+    cursor: pointer;
+}
+
+.down-arrow{
+    font-size: 1.4rem;
+    color: white;
+}
+
+.account-icons{
+    display: flex;
+    align-items: center;
+    margin-right: 1.25em;
+    cursor: pointer;
+}
+
+.account-icon{
+    color: white;
+    font-size: 1.75rem;
+    cursor: pointer;   
+}
+
+.subscribe-btn{
+    display: flex;
+    align-items: center;
+    border-right: 0.1rem rgba(255, 255, 255, 0.753) solid;
+    margin-right: 1em;  
+    padding-right: 1em;
+    cursor: pointer;
+}
+
+.header-btn-text{
+    color: white;
+    font-family: MuseoSans,sans-serif;
+    font-weight: 700;
+}
+
+.header-img{
+    width: 90px;
+    box-sizing: border-box;
+    margin-bottom: 0.6em;
+    margin-top: 0.5em;
+    max-width: 100%; 
+}
+
+.locations{
+    border: rgba(128, 128, 128, 0.137) 2px solid;
+    position: absolute;
+    top: 8.7%;
+    display: flex;
+    flex-direction: column;
+    width: 38.2%; 
+}
+
+.location{
+    border-bottom: rgba(128, 128, 128, 0.158) 2px solid;
+    padding: 0.6em;
+    color: #4f5864;
+    font-family:sans-serif;
+    background-color: white;
+}
+
+.location:hover{
+    color: #02a5db;
+    font-family:sans-serif;
+    background-color: rgba(155, 155, 155, 0.685);
+}
+
+
+
+@media (min-width:768px) {
+    .header-title{
+        /* margin:0 0 0 7.5%; */
+        margin:0 0 0 2%;  
+        /* font-size: 2.2rem; */
+        font-size: 2.3rem;  
+    }
+
+    .header-btn-text{
+       font-size: 1rem;
+    }
+
+    .locations{
+        border: rgba(128, 128, 128, 0.137) 2px solid;
+        position: absolute;
+        top: 60px;
+        display: flex;
+        flex-direction: column;
+        width: 150px; 
+    }
+  
+}
+
+
+@media (min-width:1050px) {
+    .header-btns-extra{
+        display: flex;
+    }
+
+    .header-title{
+        color: rgb(255, 255, 255);
+        /* margin:0 0 0 7.5%; */
+        margin:0 0 0 7.5%; 
+        font-weight: 900;
+        font-size: 2.2rem;
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-stretch:ultra-expanded;
+    }
+
+    .location-icons{
+        margin-right: 0.2em;
+    }
+
+    .location-btn{
+        margin-right: 0.75em;
+    }
+
+    .header-btns{   
+        margin-right: 10%;
+    }
+
+
+    .locations{
+        border: rgba(128, 128, 128, 0.137) 2px solid;
+        position: absolute;
+        top: 64px;
+        display: flex;
+        flex-direction: column;
+        width: 300px;
+    }
+
+    .location{
+        border-bottom: rgba(128, 128, 128, 0.158) 2px solid;
+        padding: 0.6em;
+        color: #4f5864;
+        font-family:sans-serif;
+        background-color: white;
+    }
+
+    .location:hover{
+        color: #02a5db;
+        font-family:sans-serif;
+        background-color: rgba(155, 155, 155, 0.685);
+    }
+
+
+
+
+    
+}
+
+
+
+
+
+
+
+
+
