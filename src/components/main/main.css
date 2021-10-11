@@ -1,0 +1,872 @@
+body{
+    background-color: #4f586423;
+    
+}
+
+
+
+.main{
+    /* border: 3px red solid; */
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+/*------------------------------------------------------*/
+
+
+.main-adv-area{
+    /* border: 3px rgb(248, 252, 13) solid; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.main-adv-area-img{
+    width: 100%;
+    height: 20%;
+    padding-top: 15px;
+    content: url("https://mediacdn.grabone.co.nz/asset/AXmOEvzHuG");
+}
+
+.main-adv-area-title{
+    font-family: sans-serif;
+    color: #4f5864;
+    font-size: 13px;
+    text-align: center;
+    line-height: 20px;
+    padding-top: 7px;
+}
+
+.main-adv-area-title a {
+    text-decoration: none;
+    margin-left: 5px;
+    font-family: sans-serif;
+    color: #01b2ee;
+    display: block;
+    text-align: center;
+}
+
+/*------------------------------------------------------*/
+
+.main-main1{
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.main-main1-discover{
+    width: 23%;
+    background-color: white;
+    border-radius: 10px;
+    display: none;
+    
+}
+
+.main-main1-discover h2 {
+    color: #01b2ee;
+    font-family: sans-serif;
+    padding: 15px;
+    margin: 0;
+}
+
+.main-main1-discover hr {
+    border-color: rgba(173, 173, 173, 0.144);
+    width: 100%;
+    margin: 0;
+}
+
+.main-main1-discover-ul{
+    padding: 0;
+    margin: 0;
+     
+}
+
+.main-main1-discover-ul li{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* color:#4f5864b4; */
+    color:#434b55ab;
+    font-family: sans-serif;
+    font-size: 0.98rem;
+    font-weight: 550;
+    font-style: normal;
+    cursor: pointer; 
+    padding: 10px;
+    margin: 0;
+    height: 30px;
+    border-bottom: rgba(173, 173, 173, 0.144) 1px solid;
+}
+ 
+.main-main1-discover-ul li:hover{
+     color: #01b2ee;
+}
+
+.main-main1-discover-ul li p {
+    color:#434b5549;
+}
+
+.main-main1-discover-ul li p:hover{
+    color:#434b5549;
+}
+
+
+/* Big------------------------------ Card*/
+
+
+.BigCard{
+    background-color: white;
+    /* width: 37%; */
+    height: 400px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    position: relative;
+    padding: 0;
+    margin: 0;  
+    margin-bottom: 20px;
+}
+
+.Card-div-img{
+    background-color: rgb(47, 196, 241);
+    border-radius: 5px; 
+    height: 250px;
+    padding: 0;
+    position: relative;
+    
+   
+}
+
+.BigCard-img{
+    width: 100%;
+    border-radius: 5px;
+    height: 250px; 
+}
+
+
+.BigCard-p{
+    color: rgb(255, 255, 255);
+    font-family: sans-serif;
+    line-height: 1.2;
+    font-size: 1rem; 
+    text-align: center;
+    font-weight: 600;
+    position: absolute;
+    top:40%;
+    margin: auto 6%;
+    opacity: 1;
+    display: none; 
+    
+}
+
+.BigCard:hover .BigCard-img{
+    opacity:0.2;
+    transition: all 0.3s ease-out;
+    background-color: rgba(1,178,238,.9);   
+}
+
+.BigCard:hover .BigCard-p {
+  display: block;
+  transition: all 0.2s ease-out;
+  
+  
+}
+
+.BigCard-Info{
+    display: flex;
+    flex-direction: column;
+    width: 94%;
+    margin: 5% auto 0 auto;
+    height: 70px;
+     
+}
+
+.BigCard-Info-text1{
+    margin: 1px 0 4px 0 ;
+    padding: 0;
+    font-family: sans-serif;
+    line-height: 1.2;
+    font-size: 1rem; 
+    color:#434b55e5;
+}
+
+.BigCard-Info-text2{
+    margin: 0px 0 2px 0 ;
+    font-family: sans-serif;
+    line-height: 1.2;
+    font-size: 1rem;  
+    color: #01b2ee;
+}
+
+.BigCard-Info-text3{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    line-height: 1.2;
+    font-size: 1rem;  
+    color:#434b5575;
+}
+
+.BigCard-prices{
+    margin: 0 auto 0 auto;
+    padding-bottom: 1em;
+    width: 94%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    /* margin: 0; */
+
+}
+
+.BigCard-prices-bought{
+    font-family: sans-serif;
+    line-height: 1.2;
+    font-size: 1rem; 
+    color:#434b55ad;
+    margin: 0;
+
+    
+}
+
+.BigCard-price{
+    display: flex;
+    width: 51%;
+    justify-content: space-between;
+    align-items: flex-end;
+    
+}
+
+.BigCard-price-old{
+    font-family: sans-serif;
+    line-height: 1.2;
+    font-size: 1.1rem; 
+    color:#434b55e1;
+    margin: 0;
+    text-decoration:line-through;
+}
+
+.BigCard-price-new{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+   
+
+   
+    
+}
+
+.BigCard-price-new-from{
+    margin: 0 ;
+    font-family: sans-serif;
+    line-height: 1.2;
+    font-size: 1.1rem; 
+    color: #01b2ee;
+    
+}
+   
+.BigCard-price-new-price{
+    margin: 0;
+    font-family: sans-serif;
+    line-height: 1.2;
+    font-size: 2rem; 
+    color: #01b2ee;
+} 
+
+
+/* --------------------------------------------------------------------- */
+
+
+.main-main2{
+ background-color: white;
+ display: flex;
+ /*-----------*/
+ flex-direction: column;
+ height: 160px;
+ /*-----------*/
+ margin: 2% 0;
+ justify-content: space-between;
+ padding: 2.5em 2.5em;
+ align-items: center;
+
+}
+
+.main-main2-h2{
+    
+    margin: 0 ;
+    font-family: sans-serif;
+    line-height: 1.2;
+    /*-----------*/
+    font-size: 1.5rem; 
+    /*-----------*/
+    color: #01b2ee;
+
+}
+
+
+.main-main2-span{
+  display: flex;
+  position: relative;
+  /* width: 43%; */
+  margin: 0 ;
+  
+}
+
+
+.main-main2-icon{
+    /*-----------*/
+    display: none;
+    /*-----------*/
+    position: absolute;
+    font-size: 2rem;
+    color: #4f58648e;
+    top: 14%;
+    left: 1%;
+}
+
+.main-main2-input{
+    margin: 0 ;
+    height: 46px;
+    font-size: 15px;
+    color: #4f5864c0;
+    /*-----------*/
+    padding: 0 15px 0 15px;
+    /*-----------*/
+    box-shadow: 0 0 8px 0 rgb(79 88 100 / 10%);
+    border-radius: 5px 0 0 5px;
+    border: 1px solid #dce3ed;
+    width: 100%;
+    
+}
+
+
+.main-main2-button{
+    margin: 0 ;
+    box-shadow: 0 0 8px 0 rgb(1 178 238 / 50%);
+    border: none;
+    background: #01b2ee;
+    border-radius: 0 5px 5px 0;
+    font-size: 15px;
+    font-weight: 600;
+    padding: 0 12px;
+    font-family: sans-serif;
+    color: white;
+}
+
+.main-main2-button:hover{
+    background: #1fc4fc;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+/* --------------------------------------------------------------------- */
+
+
+
+/* 
+.BigCard-prices-bought{
+    font-family: sans-serif;
+    line-height: 1.2;
+    font-size: 1rem; 
+    color:#434b558c;
+    margin: 9% 0 0 3%;
+    margin: 0;
+} 
+
+
+
+.BigCard-price{
+    display: flex;
+    width: 30%;
+    border: 2px black solid;
+    margin-right: 50px;
+}
+
+.BigCard-price-old{
+    font-family: sans-serif;
+    line-height: 1.2;
+    font-size: 1rem; 
+    color:#434b558c;
+    margin: 0;
+}
+
+.BigCard-price-new{
+    position: relative;
+    border: 2px red solid;
+    margin: 0;
+}
+
+.BigCard-price-new-from{
+ margin: 0;
+ font-family: sans-serif;
+    line-height: 1.2;
+    font-size: 1rem; 
+    color:#434b558c;
+}
+
+.BigCard-price-new-price{
+ margin: 0;
+ font-family: sans-serif;
+    line-height: 1.2;
+    font-size: 2rem; 
+    color: #01b2ee;
+}   */
+
+
+
+
+
+
+
+/*IPad ----------------------------------------*/
+
+@media (min-width:768px) {
+
+
+    .main{
+        /* border: 3px red solid; */
+        width: 95%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+
+
+    .main-adv-area-img{
+        width: 100%;
+        padding-top: 13px;
+        content: url("https://mediacdn.grabone.co.nz/asset/E8rOLoskPU");
+    }
+
+    .main-adv-area-title{
+        font-family: sans-serif;
+        color: #4f5864;
+        font-size: 15px;
+        text-align: center;
+        line-height: 20px;
+        padding-top: 10px;
+    }
+
+    .main-adv-area-title a {
+        display: inline;  
+    }
+
+
+    .main-main1{
+        margin-top: 15px;
+        display: flex;
+        justify-content: space-between;
+        flex-direction:row;
+    }
+
+    .BigCard{
+        background-color: white;
+        width: 49%;
+        height: 440px;
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        position: relative;
+        padding: 0;
+        margin: 0;  
+    }
+
+    .Card-div-img{
+        background-color: rgb(47, 196, 241);
+        border-radius: 5px; 
+        height: 270px;
+        padding: 0;
+        position: relative;
+    }
+    
+    .BigCard-img{
+        width: 100%;
+        border-radius: 5px;
+        height: 270px; 
+    }
+
+    
+    
+    .BigCard-Info{
+        display: flex;
+        flex-direction: column;
+        width: 92%;
+        margin: 2% auto 0 auto;
+        height: 100px;
+    }
+    
+    .BigCard-Info-text1{
+        margin: 1px 0 4px 0 ;
+        padding: 0;
+        font-family: sans-serif;
+        line-height: 1.2;
+        font-size: 1rem; 
+        color:#434b55e5;
+    }
+    
+    .BigCard-Info-text2{
+        margin: 0px 0 2px 0 ;
+        font-family: sans-serif;
+        line-height: 1.2;
+        font-size: 1.1rem; 
+        color: #01b2ee;
+    }
+    
+    .BigCard-Info-text3{
+        margin: 0;
+        padding: 0;
+        font-family: sans-serif;
+        line-height: 1.2;
+        font-size: 1.1rem; 
+        color:#434b5575;
+    }
+    
+    .BigCard-prices{
+        margin: 0 auto 0 auto;
+        /* padding-bottom: 1em; */
+        width: 92%;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        /* margin: 0; */
+    
+    }
+    
+    .BigCard-prices-bought{
+        font-family: sans-serif;
+        line-height: 1.2;
+        font-size: 1rem; 
+        color:#434b55ad;
+        margin: 0;
+        
+    }
+    
+    .BigCard-price{
+        display: flex;
+        width: 48%;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+    
+    .BigCard-price-old{
+        font-family: sans-serif;
+        line-height: 1.2;
+        font-size: 1.1rem; 
+        color:#434b55e1;
+        margin: 0;
+        text-decoration:line-through;
+    }
+    
+    .BigCard-price-new{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+       
+        /* margin-right: 8.2%; */
+    }
+    
+    .BigCard-price-new-from{
+        margin: 0 ;
+        font-family: sans-serif;
+        line-height: 1.2;
+        font-size: 1.1rem; 
+        color: #01b2ee;
+        
+    }
+       
+    .BigCard-price-new-price{
+        margin: 0;
+        font-family: sans-serif;
+        line-height: 1.2;
+        font-size: 2rem; 
+        color: #01b2ee;
+    } 
+
+    .main-main2{
+        height:100px;
+        
+    }
+       
+    .main-main2-h2{
+        
+         font-size: 1.45rem; 
+       
+    }
+       
+       
+    .main-main2-span{
+         width: 100%;
+         
+    }
+       
+       
+    .main-main2-icon{
+           display: block;
+    }
+       
+    .main-main2-input{
+           
+    padding: 0 15px 0 45px;
+          
+           
+    }
+    
+  
+}
+
+
+@media (min-width:1100px) {
+
+    .main{
+        /* border: 3px red solid; */
+        width: 85%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    .main-adv-area-img{
+        width: 100%;
+        padding-top: 30px;
+        content: url("https://mediacdn.grabone.co.nz/asset/E8rOLoskPU");
+    }
+    
+    .main-adv-area-title{
+        font-family: sans-serif;
+        color: #4f5864;
+        font-size: 15px;
+        text-align: center;
+        line-height: 20px;
+        padding-top: 10px;
+    }
+    
+    .main-adv-area-title a {
+        text-decoration: none;
+        margin-left: 5px;
+        font-family: sans-serif;
+        color: #01b2ee;
+    }
+
+    .main-adv-area-title a {
+        display: inline;
+        
+    }
+
+    .main-main1{
+        margin-top: 30px;
+        display: flex;
+        justify-content: space-between;
+        flex-direction:row;
+    }
+
+    .BigCard{
+        background-color: white;
+        width: 37%;
+        height: 535px;
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+        /* justify-content: space-between; */
+        position: relative;
+        padding: 0;
+        margin: 0;  
+    }
+
+    .Card-div-img{
+        background-color: rgb(47, 196, 241);
+        border-radius: 5px; 
+        height: 350px;
+        padding: 0;
+        position: relative;
+        
+       
+    }
+    
+    .BigCard-img{
+        width: 100%;
+        border-radius: 5px;
+        height: 350px; 
+    }
+
+    .BigCard-p{
+        color: rgb(255, 255, 255);
+        font-family: sans-serif;
+        line-height: 1.2;
+        font-size: 1rem; 
+        text-align: center;
+        font-weight: 600;
+        position: absolute;
+        top:40%;
+        margin: auto 6%;
+        opacity: 1;
+        display: none; 
+        
+    }
+    
+    .BigCard:hover .BigCard-img{
+        opacity:0.2;
+        transition: all 0.3s ease-out;
+        background-color: rgba(1,178,238,.9);   
+    }
+    
+    .BigCard:hover .BigCard-p {
+      display: block;
+      transition: all 0.2s ease-out;
+      
+      
+    }
+    
+    .BigCard-Info{
+        display: flex;
+        flex-direction: column;
+        width: 92%;
+        margin: 5% auto 0 auto;
+        height: 100px;
+        
+        
+    }
+    
+    .BigCard-Info-text1{
+        margin: 1px 0 4px 0 ;
+        padding: 0;
+        font-family: sans-serif;
+        line-height: 1.2;
+        font-size: 1.2rem; 
+        color:#434b55e5;
+    }
+    
+    .BigCard-Info-text2{
+        margin: 0px 0 2px 0 ;
+        font-family: sans-serif;
+        line-height: 1.2;
+        font-size: 1.1rem; 
+        color: #01b2ee;
+    }
+    
+    .BigCard-Info-text3{
+        margin: 0;
+        padding: 0;
+        font-family: sans-serif;
+        line-height: 1.2;
+        font-size: 1.1rem; 
+        color:#434b5575;
+    }
+    
+    .BigCard-prices{
+        margin: 0 auto 0 auto;
+        padding-bottom: 1em;
+        width: 92%;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        /* margin: 0; */
+    
+    }
+    
+    .BigCard-prices-bought{
+        font-family: sans-serif;
+        line-height: 1.2;
+        font-size: 1rem; 
+        color:#434b55ad;
+        margin: 0;
+        
+    }
+    
+    .BigCard-price{
+        display: flex;
+        width: 36%;
+        
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+    
+    .BigCard-price-old{
+        font-family: sans-serif;
+        line-height: 1.2;
+        font-size: 1.1rem; 
+        color:#434b55e1;
+        margin: 0;
+        text-decoration:line-through;
+    }
+    
+    .BigCard-price-new{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+       
+        /* margin-right: 8.2%; */
+    }
+    
+    .BigCard-price-new-from{
+        margin: 0 ;
+        font-family: sans-serif;
+        line-height: 1.2;
+        font-size: 1.1rem; 
+        color: #01b2ee;
+        
+    }
+       
+    .BigCard-price-new-price{
+        margin: 0;
+        font-family: sans-serif;
+        line-height: 1.2;
+        font-size: 2rem; 
+        color: #01b2ee;
+    } 
+
+    .main-main1-discover{
+        display:block;
+    }
+
+
+    .main-main2{
+        flex-direction: row;
+        height:initial;
+        
+       
+       }
+       
+       .main-main2-h2{
+        
+         font-size: 1.6rem; 
+       
+       }
+       
+       
+       .main-main2-span{
+         width: 43%;
+         
+       }
+       
+       
+       .main-main2-icon{
+           display: block;
+       }
+       
+       .main-main2-input{
+           
+           padding: 0 15px 0 45px;
+          
+           
+       }
+       
+       
+       
+
+
+
+    
+}
