@@ -65,11 +65,7 @@ const Main = () => {
 
 		
 
-		<span className="main-main2-span" >
-					<FiMail className="main-main2-icon" ></FiMail>
-				       <input placeholder="Enter email address" className="main-main2-input" />
-					   <button className="main-main2-button">Subscribe</button>
-				</span>
+		
 	
 	
 	
