@@ -7,13 +7,13 @@ import {IoIosArrowForward} from "react-icons/io"
 
 const Navigation = () => {
 
-	const [showCat , setShowCat] = useState(false)
+	const [showCat , setShowCat] = useState("none")
 
 	const showCati = ()=>{
-		if(showCat===false){
-			setShowCat(true)
+		if(showCat==="none"){
+			setShowCat("flex")
 		}else{
-			setShowCat(false)
+			setShowCat("none")
 		}
 	}
 
@@ -36,7 +36,7 @@ const Navigation = () => {
 		</span>
 
 
-		{showCat?<div className="nav-categories-list">
+		<div  style={{display:showCat}} className="nav-categories-list">
          <div className="left-list">
 			 <ul className="left-list-ul">
 				 <li>Activities, Events & Outdoors<IoIosArrowForward className="cat-arrow" ></IoIosArrowForward></li>
@@ -96,7 +96,10 @@ const Navigation = () => {
 
 
 
-		</div>:null}
+		</div>
+
+
+		
 
 		
 
